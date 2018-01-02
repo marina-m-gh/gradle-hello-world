@@ -1,9 +1,9 @@
 #!groovy
 node ('slave'){
-   stage 'Checkout'
+   stage 'Checkout'{
    checkout scm
-   def gradle = tool 'gradle4'
+      def gradle = tool 'gradle4'}
 
-   stage 'Build'
-   sh "${gradle}/bin/gradle build"
+   stage 'Build'{
+      sh "${gradle}/bin/gradle build"}
 }
