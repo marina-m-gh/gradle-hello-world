@@ -1,5 +1,5 @@
 #!groovy
-node ('slave1'){
+node ('slave'){
    stage 'Checkout'
    checkout scm
    def gradle = tool 'gradle4'
